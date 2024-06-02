@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: #EEE;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #ff6ec4, #7873f5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #313131;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form form {
+    display: flex;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.form form input[type="text"] {
+    display: block;
+    padding: 12px 16px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #FFF;
+    border-radius: 8px 0px 0px 8px;
+    width: 100%;
+    color: #666666;
+}
+
+.form form input[type="submit"] {
+    display: block;
+    padding: 12px 16px;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    background-color: #8C38FF;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 0px 8px 8px 0px;
+    transition: transform 0.3s ease;
+}
+
+.form form input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.urls {
+    display: block;
+}
+
+.urls .url {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 16px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.urls .url .id {
+    flex: 1 1 50px;
+    max-width: 50px;
+    color: #666666;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.urls .url .short_url {
+    flex: 1 1 0%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.urls .url .copy_btn {
+    flex: 0 1 100px;
+    text-align: center;
+}
+
+.urls .url .copy_btn button {
+    background-color: #8C38FF;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.urls .url .copy_btn button:hover {
+    background-color: #6A28CC;
+}
+
+.urls .url .long_url {
+    flex: 1 1 0%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.urls .url a {
+    color: #8C38FF;
+    text-decoration: none;
+}
+
+.urls .url .long_url a {
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
